@@ -1,0 +1,15 @@
+../Core/Src/W25Qxx.c:19:6:csLOW	1
+../Core/Src/W25Qxx.c:23:6:csHIGH	1
+../Core/Src/W25Qxx.c:28:6:SPI_Write	1
+../Core/Src/W25Qxx.c:33:6:SPI_Read	1
+../Core/Src/W25Qxx.c:38:6:W25Q_Reset	1
+../Core/Src/W25Qxx.c:52:10:W25Q_ReadID	1
+../Core/Src/W25Qxx.c:70:6:W25Q_Read	1
+../Core/Src/W25Qxx.c:92:6:write_enable	1
+../Core/Src/W25Qxx.c:101:6:write_disable	1
+../Core/Src/W25Qxx.c:110:6:W25Q_Erase_Sector	1
+../Core/Src/W25Qxx.c:133:6:writePage	2
+../Core/Src/W25Qxx.c:159:6:chipErase	1
+../Core/Src/W25Qxx.c:174:6:writeExperiment	3
+../Core/Src/W25Qxx.c:202:10:readExperiment	8
+../Core/Src/W25Qxx.c:236:6:UARTlogPage	2

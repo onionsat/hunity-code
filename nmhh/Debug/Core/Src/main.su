@@ -1,0 +1,13 @@
+../Core/Src/main.c:96:10:readTemp1ADC	24	static
+../Core/Src/main.c:117:10:readResistanceADC	24	static
+../Core/Src/main.c:138:10:readTemp2ADC	24	static
+../Core/Src/main.c:160:7:calculateTemperature	40	static
+../Core/Src/main.c:175:7:calculateResistance	32	static
+../Core/Src/main.c:188:5:main	32	static
+../Core/Src/main.c:329:6:SystemClock_Config	88	static
+../Core/Src/main.c:376:13:MX_ADC1_Init	8	static
+../Core/Src/main.c:427:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:461:13:MX_SPI1_Init	8	static
+../Core/Src/main.c:499:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:532:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:576:6:Error_Handler	4	static,ignoring_inline_asm
