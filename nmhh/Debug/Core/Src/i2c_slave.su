@@ -1,7 +1,0 @@
-../Drivers/CMSIS/Include/core_cm3.h:1762:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
-../Core/Src/i2c_slave.c:33:6:HAL_I2C_ListenCpltCallback	16	static
-../Core/Src/i2c_slave.c:38:6:process_data	4	static
-../Core/Src/i2c_slave.c:72:6:HAL_I2C_AddrCallback	16	static
-../Core/Src/i2c_slave.c:100:6:HAL_I2C_SlaveTxCpltCallback	16	static
-../Core/Src/i2c_slave.c:106:6:HAL_I2C_SlaveRxCpltCallback	16	static
-../Core/Src/i2c_slave.c:112:6:HAL_I2C_ErrorCallback	32	static
