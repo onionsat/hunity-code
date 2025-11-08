@@ -7,6 +7,7 @@
   ******************************************************************************
   * @attention
   *
+  *
   * Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.
   *
@@ -277,13 +278,7 @@ int main(void)
 
 		  if(datasendtype == 2) // bitflips
 		  {
-			  uint32_t checkingStart = HAL_GetTick(); // the start of the bitflip checking
-
 			  uint32_t countOfBitflips = readExperiment(startSectorToSend, numOfSectorsToSend);
-
-			  uint32_t checkingEnd = HAL_GetTick(); // the end of bitflip checking
-
-			  uint16_t checkingTime = (uint16_t)(checkingEnd - checkingStart);
 
 			  // datatosend: 0x01, number of bitflips, startsector, number of pages, unix timestamp
 			  datatosend[0] = 0x02; // first byte is for the mode
@@ -302,19 +297,15 @@ int main(void)
 			  datatosend[7] = (numOfSectorsToSend >> 8) & 0xFF;
 			  datatosend[8] = numOfSectorsToSend & 0xFF;
 
-			  // sending the lenght of the bitflip checking
-			  datatosend[9] = (checkingTime >> 8) & 0xFF;
-			  datatosend[10] = checkingTime & 0xFF;
-
 			  uint32_t currentUnixTimestamp = unixTimestamp;
 
 			  // 4 bytes for unixtimestamp
-			  datatosend[11] = (currentUnixTimestamp >> 24) & 0xFF;
-			  datatosend[12] = (currentUnixTimestamp >> 16) & 0xFF;
-			  datatosend[13] = (currentUnixTimestamp >> 8) & 0xFF;
-			  datatosend[14] = currentUnixTimestamp & 0xFF;
+			  datatosend[9] = (currentUnixTimestamp >> 24) & 0xFF;
+			  datatosend[10] = (currentUnixTimestamp >> 16) & 0xFF;
+			  datatosend[11] = (currentUnixTimestamp >> 8) & 0xFF;
+			  datatosend[12] = currentUnixTimestamp & 0xFF;
 
-			  for(int z = 15; z < 16; z++)
+			  for(int z = 13; z < 16; z++)
 			  {
 				datatosend[z] = 0xCB;
 			  }
